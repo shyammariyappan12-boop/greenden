@@ -1,34 +1,20 @@
-function searchPlaces() {
+const form = document.querySelector(".contact-content form");
 
-    const searchInput = document.getElementById("searchInput");
-    const searchText = searchInput.value.toLowerCase().trim();
+if (form) {
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
 
-    const cards = document.querySelectorAll(".card");
+        const name = form.querySelector('input[type="text"]').value.trim();
+        const email = form.querySelector('input[type="email"]').value.trim();
+        const message = form.querySelector("textarea").value.trim();
 
-    if (searchText === "") {
-        alert("Please enter a place to search.");
-        return;
-    }
-
-    let found = false;
-
-    cards.forEach(function(card) {
-
-        const placeName = card
-            .querySelector("h3")
-            .innerText
-            .toLowerCase();
-
-        if (placeName.includes(searchText)) {
-            card.style.display = "block";
-            found = true;
-        } else {
-            card.style.display = "none";
+        if (name === "" || email === "" || message === "") {
+            alert("Please fill all the fields.");
+            return;
         }
 
-    });
+        alert("Thank you, " + name + "! Your message has been sent successfully.");
 
-    if (!found) {
-        alert("No destination found.");
-    }
+        form.reset();
+    });
 }
