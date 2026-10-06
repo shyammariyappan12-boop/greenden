@@ -1,123 +1,34 @@
-// ===============================
-// COURSE SEARCH
-// ===============================
+function searchPlaces() {
 
-const searchInput = document.getElementById("searchInput");
-
-searchInput.addEventListener("input", function () {
-
+    const searchInput = document.getElementById("searchInput");
     const searchText = searchInput.value.toLowerCase().trim();
 
-    const courseCards = document.querySelectorAll(".course-card");
+    const cards = document.querySelectorAll(".card");
 
-    courseCards.forEach(function (card) {
+    if (searchText === "") {
+        alert("Please enter a place to search.");
+        return;
+    }
 
-        const courseName = card
+    let found = false;
+
+    cards.forEach(function(card) {
+
+        const placeName = card
             .querySelector("h3")
             .innerText
             .toLowerCase();
 
-        if (courseName.includes(searchText)) {
+        if (placeName.includes(searchText)) {
             card.style.display = "block";
+            found = true;
         } else {
             card.style.display = "none";
         }
 
     });
 
-});
-
-
-// ===============================
-// ADD TOPIC
-// ===============================
-
-function addTopic() {
-
-    const topicInput = document.getElementById("topicInput");
-
-    const topic = topicInput.value.trim();
-
-    if (topic === "") {
-        alert("Please enter a topic!");
-        return;
+    if (!found) {
+        alert("No destination found.");
     }
-
-    const topicsList = document.getElementById("topicsList");
-
-    const newTopic = document.createElement("span");
-
-    newTopic.innerText = topic;
-
-    topicsList.appendChild(newTopic);
-
-    topicInput.value = "";
-
 }
-
-
-// ===============================
-// ENTER KEY FOR TOPIC
-// ===============================
-
-document
-    .getElementById("topicInput")
-    .addEventListener("keypress", function (event) {
-
-        if (event.key === "Enter") {
-            addTopic();
-        }
-
-    });
-
-
-// ===============================
-// HERO SEARCH BUTTON
-// ===============================
-
-const heroSearchButton = document.querySelector(".hero-search button");
-
-const heroSearchInput = document.querySelector(".hero-search input");
-
-heroSearchButton.addEventListener("click", function () {
-
-    const searchValue = heroSearchInput.value.trim();
-
-    if (searchValue === "") {
-        alert("Please enter something to search!");
-        return;
-    }
-
-    searchInput.value = searchValue;
-
-    searchInput.dispatchEvent(new Event("input"));
-
-    document.querySelector(".section").scrollIntoView({
-        behavior: "smooth"
-    });
-
-});
-
-
-// ===============================
-// COURSE CARD CLICK
-// ===============================
-
-const courseCards = document.querySelectorAll(".course-card");
-
-courseCards.forEach(function (card) {
-
-    card.addEventListener("click", function () {
-
-        const courseTitle =
-            card.querySelector("h3").innerText;
-
-        alert(
-            "You selected:\n\n" +
-            courseTitle +
-            "\n\nCourse details coming soon!"
-        );
-
-    });
-
-});

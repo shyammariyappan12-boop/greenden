@@ -3,135 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Udemy Clone</title>
+    <title>Travel Explorer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navbar -->
-    <header class="navbar">
-        <div class="logo">udemy</div>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Travel<span>Explorer</span></div>
 
-        <a href="#" class="categories">Categories</a>
-
-        <div class="search">
-            🔍
-            <input type="text" placeholder="Search for anything">
-        </div>
-
-        <a href="#">Udemy Business</a>
-        <a href="#">Teach on Udemy</a>
-        <a href="#">My Learning</a>
-
-        <button>Log in</button>
-        <button class="signup">Sign up</button>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Hotels</a>
+            <a href="#">Restaurants</a>
+            <a href="#">Destinations</a>
+            <a href="#">About</a>
+        </nav>
     </header>
 
 
-    <!-- Menu Bar -->
-    <nav class="menu">
-        <a href="#">Development</a>
-        <a href="#">Business</a>
-        <a href="#">Finance & Accounting</a>
-        <a href="#">IT & Software</a>
-        <a href="#">Design</a>
-        <a href="#">Marketing</a>
-        <a href="#">Personal Development</a>
-    </nav>
+    <!-- Main Content -->
+    <main>
 
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Explore Your Next Adventure</h1>
+                <p>Find the best places to stay, eat and explore.</p>
 
-    <!-- Recommended Courses -->
-    <section class="section">
-        <h1>Recommended Courses</h1>
-
-        <div class="courses">
-
-            <div class="course">
-                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80">
-                <h3>Complete Web Development Course</h3>
-                <p>Learn HTML, CSS and JavaScript</p>
-                <strong>⭐ 4.8 (125,430)</strong>
+                <!-- Search Section -->
+                <div class="search-box">
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search cities or places..."
+                    >
+                    <button onclick="searchPlaces()">Search</button>
+                </div>
             </div>
+        </section>
 
-            <div class="course">
-                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80">
-                <h3>JavaScript for Beginners</h3>
-                <p>Learn JavaScript from basics</p>
-                <strong>⭐ 4.7 (98,210)</strong>
+
+        <!-- Listings -->
+        <section class="listings">
+            <h2>Popular Destinations</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=700&q=80">
+                    <div class="card-content">
+                        <h3>Paris</h3>
+                        <p>France</p>
+                        <p>Explore beautiful streets, food and famous landmarks.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=700&q=80">
+                    <div class="card-content">
+                        <h3>Bali</h3>
+                        <p>Indonesia</p>
+                        <p>Enjoy beaches, nature and unforgettable experiences.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?auto=format&fit=crop&w=700&q=80">
+                    <div class="card-content">
+                        <h3>London</h3>
+                        <p>United Kingdom</p>
+                        <p>Discover historic places and modern city life.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=700&q=80">
+                    <div class="card-content">
+                        <h3>Tokyo</h3>
+                        <p>Japan</p>
+                        <p>Experience technology, culture and amazing food.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=700&q=80">
+                    <div class="card-content">
+                        <h3>Dubai</h3>
+                        <p>UAE</p>
+                        <p>Experience luxury, shopping and modern attractions.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1529253355930-ddbe423a2ac7?auto=format&fit=crop&w=700&q=80">
+                    <div class="card-content">
+                        <h3>New York</h3>
+                        <p>USA</p>
+                        <p>Explore the city that never sleeps.</p>
+                    </div>
+                </div>
+
             </div>
+        </section>
 
-            <div class="course">
-                <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=600&q=80">
-                <h3>Python Programming</h3>
-                <p>Master Python programming</p>
-                <strong>⭐ 4.8 (76,530)</strong>
-            </div>
-
-            <div class="course">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80">
-                <h3>Data Science</h3>
-                <p>Learn Data Science and ML</p>
-                <strong>⭐ 4.7 (65,320)</strong>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- Recommended Topics -->
-    <section class="topics">
-        <h1>Recommended Topics</h1>
-
-        <input type="text" placeholder="Enter a topic">
-
-    </section>
-
-
-    <!-- Popular Courses -->
-    <section class="section">
-        <h1>Popular Courses</h1>
-
-        <div class="courses">
-
-            <div class="course">
-                <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=600&q=80">
-                <h3>Python Developer Course</h3>
-                <p>Become a professional Python developer</p>
-                <strong>⭐ 4.9 (210,430)</strong>
-            </div>
-
-            <div class="course">
-                <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=600&q=80">
-                <h3>Business Fundamentals</h3>
-                <p>Learn essential business skills</p>
-                <strong>⭐ 4.8 (85,230)</strong>
-            </div>
-
-            <div class="course">
-                <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=600&q=80">
-                <h3>UI/UX Design</h3>
-                <p>Learn modern UI/UX design</p>
-                <strong>⭐ 4.8 (54,210)</strong>
-            </div>
-
-            <div class="course">
-                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80">
-                <h3>Digital Marketing</h3>
-                <p>Complete digital marketing course</p>
-                <strong>⭐ 4.7 (42,120)</strong>
-            </div>
-
-        </div>
-    </section>
+    </main>
 
 
     <!-- Footer -->
     <footer>
-        <h2>Udemy Clone</h2>
-        <p>Learn without limits.</p>
-        <p>© 2026 Udemy Clone. All rights reserved.</p>
+        <h2>TravelExplorer</h2>
+        <p>© 2026 TravelExplorer. All rights reserved.</p>
     </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
 </html>
