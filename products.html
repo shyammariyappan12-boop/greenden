@@ -1,374 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Greenden - Products</title>
-
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenden | Products</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- Navbar -->
-    <nav class="bg-green-700 text-white px-6 py-5">
+  <!-- Navbar -->
+  <nav class="bg-green-800 text-white px-6 py-4 flex justify-between items-center shadow-md sticky top-0 z-50">
+    <h1 class="text-2xl font-bold tracking-wide">Greenden 🌿</h1>
+    <ul class="flex gap-6 font-medium">
+      <li><a href="index.html" class="hover:text-green-300 transition">Home</a></li>
+      <li><a href="products.html" class="hover:text-green-300 transition">Products</a></li>
+      <li><a href="contact.html" class="hover:text-green-300 transition">Contact</a></li>
+    </ul>
+  </nav>
 
-        <div class="max-w-7xl mx-auto flex items-center justify-between">
-
-            <h1 class="text-3xl font-bold">
-                Greenden
-            </h1>
-
-            <div class="flex gap-6 text-lg">
-                <a href="index.html" class="hover:text-green-200">
-                    Home
-                </a>
-
-                <a href="products.html" class="text-green-200 font-semibold">
-                    Products
-                </a>
-
-                <a href="contact.html" class="hover:text-green-200">
-                    Contact
-                </a>
-            </div>
-
+  <!-- Products Section -->
+  <section class="max-w-6xl mx-auto py-12 px-6">
+    <h2 class="text-3xl font-bold text-center text-green-800 mb-8">Our Plant Collection</h2>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      
+      <!-- Product Card 1 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="https://images.unsplash.com/photo-1545241047-6083a3684587?w=400" alt="Snake Plant" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg text-gray-800">Snake Plant</h3>
+          <p class="text-green-700 font-semibold my-1">₹299</p>
+          <button class="w-full mt-2 bg-green-700 text-white py-2 rounded hover:bg-green-800 transition text-sm">Add to Cart</button>
         </div>
-
-    </nav>
-
-
-    <!-- Page Heading -->
-    <section class="bg-green-50 py-16 px-6 text-center">
-
-        <h2 class="text-5xl font-bold text-green-900 mb-4">
-            Our Products 🌿
-        </h2>
-
-        <p class="text-gray-600 text-lg">
-            Explore our collection of beautiful plants and
-            eco-friendly products.
-        </p>
-
-    </section>
-
-
-    <!-- Products -->
-    <section class="max-w-7xl mx-auto px-6 py-16">
-
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-
-
-            <!-- Product 1 -->
-            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
-
-                <img
-                    src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=600&q=80"
-                    alt="Indoor Plant"
-                    class="w-full h-64 object-cover">
-
-                <div class="p-6">
-
-                    <h3 class="text-2xl font-bold mb-2">
-                        Indoor Plant
-                    </h3>
-
-                    <p class="text-gray-500 mb-4">
-                        Perfect for home and office decoration.
-                    </p>
-
-                    <div class="flex items-center justify-between">
-
-                        <span class="text-green-700 text-xl font-bold">
-                            ₹499
-                        </span>
-
-                        <button
-                            class="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-800">
-                            Buy Now
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- Product 2 -->
-            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
-
-                <img
-                    src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=600&q=80"
-                    alt="Money Plant"
-                    class="w-full h-64 object-cover">
-
-                <div class="p-6">
-
-                    <h3 class="text-2xl font-bold mb-2">
-                        Money Plant
-                    </h3>
-
-                    <p class="text-gray-500 mb-4">
-                        A beautiful and easy-to-grow indoor plant.
-                    </p>
-
-                    <div class="flex items-center justify-between">
-
-                        <span class="text-green-700 text-xl font-bold">
-                            ₹399
-                        </span>
-
-                        <button
-                            class="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-800">
-                            Buy Now
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- Product 3 -->
-            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
-
-                <img
-                    src="https://images.unsplash.com/photo-1593691509543-c55fb32e5cee?auto=format&fit=crop&w=600&q=80"
-                    alt="Peace Lily"
-                    class="w-full h-64 object-cover">
-
-                <div class="p-6">
-
-                    <h3 class="text-2xl font-bold mb-2">
-                        Peace Lily
-                    </h3>
-
-                    <p class="text-gray-500 mb-4">
-                        Add freshness and beauty to your living space.
-                    </p>
-
-                    <div class="flex items-center justify-between">
-
-                        <span class="text-green-700 text-xl font-bold">
-                            ₹599
-                        </span>
-
-                        <button
-                            class="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-800">
-                            Buy Now
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- Product 4 -->
-            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
-
-                <img
-                    src="https://images.unsplash.com/photo-1593482892290-f54927ae2c0b?auto=format&fit=crop&w=600&q=80"
-                    alt="Snake Plant"
-                    class="w-full h-64 object-cover">
-
-                <div class="p-6">
-
-                    <h3 class="text-2xl font-bold mb-2">
-                        Snake Plant
-                    </h3>
-
-                    <p class="text-gray-500 mb-4">
-                        A low-maintenance plant for modern homes.
-                    </p>
-
-                    <div class="flex items-center justify-between">
-
-                        <span class="text-green-700 text-xl font-bold">
-                            ₹699
-                        </span>
-
-                        <button
-                            class="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-800">
-                            Buy Now
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- Product 5 -->
-            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
-
-                <img
-                    src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=600&q=80"
-                    alt="Succulent Plant"
-                    class="w-full h-64 object-cover">
-
-                <div class="p-6">
-
-                    <h3 class="text-2xl font-bold mb-2">
-                        Succulent Plant
-                    </h3>
-
-                    <p class="text-gray-500 mb-4">
-                        Small, stylish and easy to maintain.
-                    </p>
-
-                    <div class="flex items-center justify-between">
-
-                        <span class="text-green-700 text-xl font-bold">
-                            ₹299
-                        </span>
-
-                        <button
-                            class="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-800">
-                            Buy Now
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- Product 6 -->
-            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
-
-                <img
-                    src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=600&q=80"
-                    alt="Aloe Vera"
-                    class="w-full h-64 object-cover">
-
-                <div class="p-6">
-
-                    <h3 class="text-2xl font-bold mb-2">
-                        Aloe Vera
-                    </h3>
-
-                    <p class="text-gray-500 mb-4">
-                        A useful plant with natural benefits.
-                    </p>
-
-                    <div class="flex items-center justify-between">
-
-                        <span class="text-green-700 text-xl font-bold">
-                            ₹449
-                        </span>
-
-                        <button
-                            class="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-800">
-                            Buy Now
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- Product 7 -->
-            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
-
-                <img
-                    src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=600&q=80"
-                    alt="Rubber Plant"
-                    class="w-full h-64 object-cover">
-
-                <div class="p-6">
-
-                    <h3 class="text-2xl font-bold mb-2">
-                        Rubber Plant
-                    </h3>
-
-                    <p class="text-gray-500 mb-4">
-                        A stylish green plant for interiors.
-                    </p>
-
-                    <div class="flex items-center justify-between">
-
-                        <span class="text-green-700 text-xl font-bold">
-                            ₹799
-                        </span>
-
-                        <button
-                            class="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-800">
-                            Buy Now
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- Product 8 -->
-            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
-
-                <img
-                    src="https://images.unsplash.com/photo-1597055181300-8b0d3a5d3f5b?auto=format&fit=crop&w=600&q=80"
-                    alt="Lucky Bamboo"
-                    class="w-full h-64 object-cover">
-
-                <div class="p-6">
-
-                    <h3 class="text-2xl font-bold mb-2">
-                        Lucky Bamboo
-                    </h3>
-
-                    <p class="text-gray-500 mb-4">
-                        Bring a fresh and peaceful feel to your home.
-                    </p>
-
-                    <div class="flex items-center justify-between">
-
-                        <span class="text-green-700 text-xl font-bold">
-                            ₹349
-                        </span>
-
-                        <button
-                            class="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-800">
-                            Buy Now
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?w=400" alt="Monstera" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg text-gray-800">Monstera Deliciosa</h3>
+          <p class="text-green-700 font-semibold my-1">₹499</p>
+          <button class="w-full mt-2 bg-green-700 text-white py-2 rounded hover:bg-green-800 transition text-sm">Add to Cart</button>
         </div>
+      </div>
 
-    </section>
+      <!-- Product Card 3 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=400" alt="Succulent" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg text-gray-800">Mini Succulent</h3>
+          <p class="text-green-700 font-semibold my-1">₹199</p>
+          <button class="w-full mt-2 bg-green-700 text-white py-2 rounded hover:bg-green-800 transition text-sm">Add to Cart</button>
+        </div>
+      </div>
 
+      <!-- Product Card 4 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=400" alt="Aloe Vera" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg text-gray-800">Aloe Vera</h3>
+          <p class="text-green-700 font-semibold my-1">₹249</p>
+          <button class="w-full mt-2 bg-green-700 text-white py-2 rounded hover:bg-green-800 transition text-sm">Add to Cart</button>
+        </div>
+      </div>
 
-    <!-- Footer -->
-    <footer class="bg-green-900 text-white text-center py-8">
+    </div>
+  </section>
 
-        <h2 class="text-2xl font-bold mb-2">
-            Greenden 🌱
-        </h2>
-
-        <p class="text-green-200">
-            Growing a greener and healthier world.
-        </p>
-
-        <p class="text-green-300 mt-4">
-            © 2026 Greenden. All Rights Reserved.
-        </p>
-
-    </footer>
+  <!-- Footer -->
+  <footer class="bg-green-900 text-white py-6 text-center text-sm">
+    <p>&copy; 2026 Greenden. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
